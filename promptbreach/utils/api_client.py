@@ -666,8 +666,12 @@ class UnifiedAPIClient:
         self._init_client()
     
     def _load_config(self) -> None:
-        """从配置文件加载配置"""
+        """从配置文件加载配置，若不存在则自动创建默认配置"""
         config_path = Path("config/api_config.json")
+        
+        # 自动创建 config 目录（如果不存在）
+        config_path.parent.mkdir(parents=True, exist_ok=True)
+        
         if config_path.exists():
             try:
                 with open(config_path, "r", encoding="utf-8") as f:
@@ -675,7 +679,32 @@ class UnifiedAPIClient:
                     self._config.update(saved_config)
                     logger.info(f"[Config] 已加载配置: {self._config['provider']}")
             except Exception as e:
-                logger.warning(f"[Config] 加载配置失败: {e}")
+                logger.warning(f"[Config] 加载配置失败: {e}，将使用默认配置")
+                # 加载失败时创建默认配置
+                self._create_default_config(config_path)
+        else:
+            # 配置文件不存在，自动创建默认配置
+            logger.info("[Config] 配置文件不存在，自动创建默认配置")
+            self._create_default_config(config_path)
+    
+    def _create_default_config(self, config_path: Path) -> None:
+        """创建默认配置文件"""
+        try:
+            default_config = {
+                "provider": "deepseek",
+                "base_url": "https://api.deepseek.com/v1",
+                "model": "deepseek-v4-flash",
+                "api_key": "",
+                "timeout": 60,
+                "saved_configs": [],
+                "provider_api_keys": {}
+            }
+            self._config.update(default_config)
+            with open(config_path, "w", encoding="utf-8") as f:
+                json.dump(default_config, f, indent=2, ensure_ascii=False)
+            logger.info(f"[Config] 已创建默认配置文件: {config_path}")
+        except Exception as e:
+            logger.warning(f"[Config] 创建默认配置失败: {e}")
     
     def _save_config(self) -> None:
         """保存配置到文件"""
