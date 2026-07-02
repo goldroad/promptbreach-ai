@@ -1,0 +1,21 @@
+{
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com/v1",
+  "model": "deepseek-v4-flash",
+  "api_key": "请替换为你的key",
+  "timeout": 60,
+  "saved_configs": [
+    {
+      "provider": "xiaomi",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "model": "mimo-v2.5",
+      "api_key": "请替换为你的key",
+      "timeout": 60,
+      "saved_at": "2026-06-26 14:20:56"
+    }
+  ],
+  "provider_api_keys": {
+    "xiaomi": "请替换为你的key",
+    "deepseek": ""
+  }
+}

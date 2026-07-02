@@ -1,0 +1,113 @@
+{
+    "model_lists": {
+        "ollama": [
+            "qwen3.5:0.8b",
+            "qwen3:1.7b",
+            "qwen3:4.7b",
+            "qwen3:8b",
+            "qwen3:14b",
+            "llama3.1:8b",
+            "llama3.2:3b",
+            "llama3.2:11b",
+            "mistral:7b",
+            "mixtral:8x7b",
+            "deepseek-coder:6.7b",
+            "deepseek-coder:33b",
+            "codellama:7b",
+            "codellama:13b",
+            "nomic-embed-text",
+            "mxbai-embed-large",
+            "自定义"
+        ],
+        "kimi": [
+            "moonshot-v1-8k",
+            "moonshot-v1-32k",
+            "moonshot-v1-128k",
+            "moonshot-v1-auto",
+            "kimi-k2",
+            "kimi-k2.5",
+            "自定义"
+        ],
+        "deepseek": [
+            "deepseek-v4-flash",
+            "deepseek-v4-pro",
+            "自定义"
+        ],
+        "xiaomi": [
+            "mimo-v2-flash",
+            "mimo-v2-omni",
+            "mimo-v2-pro",
+            "mimo-v2-tts",
+            "mimo-v2.5",
+            "mimo-v2.5-asr",
+            "mimo-v2.5-pro",
+            "mimo-v2.5-tts",
+            "mimo-v2.5-tts-voiceclone",
+            "mimo-v2.5-tts-voicedesign",
+            "自定义"
+        ],
+        "minimax": [
+            "MiniMax-M2",
+            "MiniMax-M2.7",
+            "MiniMax-M2.5",
+            "MiniMax-Text-01",
+            "MiniMax-M2.7-highspeed",
+            "MiniMax-M2.5-highspeed",
+            "自定义"
+        ],
+        "siliconflow": [
+            "Qwen/Qwen2.5-7B-Instruct",
+            "Qwen/Qwen2.5-14B-Instruct",
+            "Qwen/Qwen2.5-32B-Instruct",
+            "Qwen/Qwen2.5-72B-Instruct",
+            "deepseek-ai/DeepSeek-V2.5",
+            "deepseek-ai/DeepSeek-V3",
+            "THUDM/glm-4-9b-chat",
+            "01-ai/Yi-1.5-6B-Chat",
+            "01-ai/Yi-1.5-34B-Chat",
+            "自定义"
+        ],
+        "zhipu": [
+            "glm-5.1",
+            "glm-5",
+            "glm-5-Turbo",
+            "glm-4.7",
+            "glm-4.7-FlashX",
+            "glm-4.6",
+            "glm-4.5-Air",
+            "glm-4.5-AirX",
+            "glm-4-Long",
+            "glm-4-FlashX-250414",
+            "glm-4.7-Flash",
+            "glm-4.5-Flash",
+            "glm-4-Flash-250414",
+            "自定义"
+        ],
+        "doubao": [
+            "doubao-seed-2-0-pro-260215",
+            "doubao-seed-2-0-lite-260215",
+            "doubao-seed-2-0-mini-260215",
+            "doubao-seed-2-0-code-preview-260215",
+            "doubao-seed-character-251128",
+            "自定义"
+        ],
+        "custom_openai": [
+            "mimo-v2-flash",
+            "mimo-v2-omni",
+            "mimo-v2-pro",
+            "mimo-v2-tts",
+            "mimo-v2.5",
+            "mimo-v2.5-asr",
+            "mimo-v2.5-pro",
+            "mimo-v2.5-tts",
+            "mimo-v2.5-tts-voiceclone",
+            "mimo-v2.5-tts-voicedesign",
+            "自定义"
+        ],
+        "custom_anthropic": [
+            "claude-sonnet-4-20250514",
+            "claude-opus-4-20250514",
+            "自定义"
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+# PromptBreach - AI安全注入闯关靶场
+# 运行环境要求：
+# Python 3.8+
+# Tkinter (通常随 Python 一起安装)
+
+# 第三方依赖
+requests>=2.31.0  # HTTP 请求库，用于调用 AI 服务商 API
+anthropic>=0.18.0  # MiniMax 使用 Anthropic SDK
